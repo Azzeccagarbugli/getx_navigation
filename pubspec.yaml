@@ -1,0 +1,51 @@
+name: getxnavigation
+description: Minimal example of responsive navigation
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get:
+    git: https://github.com/jonataslaw/getx.git
+  auto_size_text: 3.0.0-nullsafety.0
+  flutter_breadcrumb: ^1.0.1
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  import_sorter: ^4.5.0
+  lint: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Dosis-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Dosis-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Dosis-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Dosis-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Dosis-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Dosis-SemiBold.ttf
+          weight: 600
+
+  assets:
+    - assets/img/
