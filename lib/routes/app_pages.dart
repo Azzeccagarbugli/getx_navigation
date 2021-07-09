@@ -27,7 +27,7 @@ class AppPages {
       children: [
         GetPage(
           name: _Paths.chambers,
-          page: () => ChambersPage(),
+          page: () => const FlutterLogo(),
           children: [
             GetPage(
               name: _Paths.chambersId,
@@ -37,11 +37,11 @@ class AppPages {
         ),
         GetPage(
           name: _Paths.notifications,
-          page: () => NotificationsPage(),
+          page: () => const FlutterLogo(),
         ),
         GetPage(
           name: _Paths.connections,
-          page: () => ConnectionsPage(),
+          page: () => const FlutterLogo(),
         ),
       ],
     ),
