@@ -12,27 +12,19 @@ import 'package:getxnavigation/theme/myangelevo_theme.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  setPathUrlStrategy();
+  //WidgetsFlutterBinding.ensureInitialized();
+  //setPathUrlStrategy();
 
-  runApp(MyAngelEvo());
-}
-
-class MyAngelEvo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      title: '$kProjectName • Home',
-      theme: MyAngelEvoTheme.theme(context),
+  runApp(
+    GetMaterialApp.router(
       getPages: AppPages.routes,
       routeInformationParser: GetInformationParser(),
       routerDelegate: GetDelegate(
         preventDuplicateHandlingMode:
             PreventDuplicateHandlingMode.PopUntilOriginalRoute,
       ),
-    );
-  }
+    ),
+  );
 }
 
 class MyAngelEvoUI extends StatelessWidget {
