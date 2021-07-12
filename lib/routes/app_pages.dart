@@ -20,9 +20,7 @@ class AppPages {
       preventDuplicates: true,
       name: initPage,
       page: () => const MyAngelEvoUI(),
-      middlewares: [
-        RouterOutletContainerMiddleWare(initPage),
-      ],
+      participatesInRootNavigator: true,
       binding: NavigationBinding(),
       children: [
         GetPage(

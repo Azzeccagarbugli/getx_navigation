@@ -19,10 +19,7 @@ void main() {
       getPages: AppPages.routes,
       theme: MyAngelEvoTheme.theme,
       routeInformationParser: GetInformationParser(),
-      routerDelegate: GetDelegate(
-        preventDuplicateHandlingMode:
-            PreventDuplicateHandlingMode.PopUntilOriginalRoute,
-      ),
+      routerDelegate: GetDelegate(),
     ),
   );
 }
