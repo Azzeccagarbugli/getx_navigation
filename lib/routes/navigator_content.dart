@@ -12,11 +12,11 @@ class NavigatorContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetRouterOutlet(
       name: Routes.entry,
-      emptyWidget: (delegate) => const Scaffold(
-        body: Center(
-          child: FlutterLogo(),
-        ),
-      ),
+      // emptyWidget: (delegate) => const Scaffold(
+      //   body: Center(
+      //     child: FlutterLogo(),
+      //   ),
+      // ),
       pickPages: (currentNavStack) {
         return currentNavStack.currentTreeBranch.pickAfterRoute(Routes.entry);
       },

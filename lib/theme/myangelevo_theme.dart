@@ -4,7 +4,7 @@ import 'package:getxnavigation/theme/constants.dart';
 import 'color_palette.dart';
 
 class MyAngelEvoTheme {
-  static ThemeData theme(BuildContext context) {
+  static ThemeData get theme {
     return ThemeData(
       fontFamily: kFontFamilyName,
       textSelectionTheme: const TextSelectionThemeData(
