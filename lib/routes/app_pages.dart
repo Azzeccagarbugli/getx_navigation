@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/nav2/router_outlet.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:getxnavigation/bindings/navigation_binding.dart';
 import 'package:getxnavigation/main.dart';
-import 'package:getxnavigation/pages/chambers_page.dart';
-import 'package:getxnavigation/pages/connections_page.dart';
-import 'package:getxnavigation/pages/notifications_page.dart';
 
 part 'app_routes.dart';
 
@@ -22,10 +18,12 @@ class AppPages {
       page: () => const MyAngelEvoUI(),
       participatesInRootNavigator: true,
       binding: NavigationBinding(),
+      transition: Transition.noTransition,
       children: [
         GetPage(
           name: _Paths.chambers,
           page: () => const FlutterLogo(),
+          transition: Transition.noTransition,
           children: [
             GetPage(
               name: _Paths.chambersId,
@@ -35,10 +33,12 @@ class AppPages {
         ),
         GetPage(
           name: _Paths.notifications,
+          transition: Transition.noTransition,
           page: () => const FlutterLogo(),
         ),
         GetPage(
           name: _Paths.connections,
+          transition: Transition.noTransition,
           page: () => const FlutterLogo(),
         ),
       ],

@@ -37,6 +37,6 @@ class MyAngelEvoUI extends StatelessWidget {
       mobile: () => const MobileApp(),
     );
 
-    return appBuilder!();
+    return appBuilder();
   }
 }

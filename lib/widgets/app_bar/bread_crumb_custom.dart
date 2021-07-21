@@ -19,7 +19,7 @@ class BreadCrumpCustom extends StatelessWidget {
       disableColor: kNeutralColor,
       onTap: !disable
           ? () {
-              Get.getDelegate()?.toNamed('/$item');
+              Get.toNamed('/$item');
             }
           : null,
       content: AutoSizeText(
