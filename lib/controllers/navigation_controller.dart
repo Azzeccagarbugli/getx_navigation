@@ -13,7 +13,7 @@ class NavigationController extends GetxController {
     super.onInit();
 
     ever(index, (_) {
-      Get.toNamed(index.value.page);
+      Get.rootDelegate.toNamed(index.value.page);
       TitlePage.update(title: index.value.title);
     });
   }

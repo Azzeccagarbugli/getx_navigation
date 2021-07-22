@@ -15,7 +15,8 @@ dependencies:
     sdk: flutter
   auto_size_text: 3.0.0-nullsafety.0
   flutter_breadcrumb: ^1.0.1
-  get: ^4.2.3
+  get:
+    git: https://github.com/jonataslaw/getx.git
   url_strategy: ^0.2.0
 
 dev_dependencies:

@@ -89,10 +89,12 @@ packages:
   get:
     dependency: "direct main"
     description:
-      name: get
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.2.3"
+      path: "."
+      ref: HEAD
+      resolved-ref: "31cce1f03f3905b1ebe0c9635127346818baecf7"
+      url: "https://github.com/jonataslaw/getx.git"
+    source: git
+    version: "4.2.4"
   import_sorter:
     dependency: "direct dev"
     description:
